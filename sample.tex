@@ -17,12 +17,12 @@
 % Heading arguments are {volume}{year}{pages}{submitted}{published}{author-full-names}
 
 % Short headings should be running head and authors last names
-\ShortHeadings{95-845: MLHC Article}{Lastname and Lastname}
+\ShortHeadings{95-845: AAMLP Article}{Lastname and Lastname}
 \firstpageno{1}
 
 \begin{document}
 
-\title{Heinz 95-845: Article Title on \\Machine Learning and Health Care}
+\title{Heinz 95-845: Article Title on \\ Applied Analytics: the Machine Learning Pipeline}
 
 \author{\name Firstname Lastname \email ANDREWID/email@address.edu \\
        \addr Heinz College\\
@@ -30,7 +30,7 @@
        Pittsburgh, PA, United States
        \AND
        \name Firstname Lastname \email ANDREWID/email@address.edu \\
-       \addr Department of Health Research\\
+       \addr Department of Research\\
        Another University \\
        City, State, Country} 
 
@@ -43,33 +43,31 @@
 
 \section{Project overview -- for reference -- remove for submission}
 
-The project will be conducted in March and April, with the \textbf{code and paper due on April 26th}. The secondary review will be due on May 3rd.
+The project will be conducted in March and April, with the \textbf{code and paper due on April 30th}.
 
 \subsection{Grading}
-The project is worth 60 points total: proposal 10 points, code 10 points, paper 30 points, and secondary 10 points.
+The project is worth 40 points total: proposal 10 points, code 5 points, paper 25 points.
 
-\textbf{Proposal -} Already complete, see proposal TeX.
+%\textbf{Proposal -} Already complete, see proposal TeX.
 
-\textbf{Code -} Your code should be commented and organized. You should be able to hand your code to your secondary and they should be able to run it, and the code should be clear enough to modify it. That may mean you need to provide basic details about how to run your code, \emph{e.g.} in a README file. Your code should be submitted in the form of a git repository (private or public is your choice) and should not contain any private data. 
+\textbf{Code -} Your code should be commented and organized. You should be able to hand your code to a third party and they should be able to run it. The code should be clear enough to modify it. That may mean you need to provide basic details about how to run your code, \emph{e.g.} in a README file. Your code should be submitted in the form of a git repository (private or public is your choice) and should not contain any private data. 
 
 \textbf{Paper -} Your paper will be assessed for clarity, completeness, and conciseness of the Sections in this template. Your analysis will be assessed for largely for appropriate study design, implementation, and reporting of results. Other Sections in the template will also be graded, e.g. is the task appropriately motivated, are appropriate related works identified, do the conclusions faithfully reflect the results of the analysis, etc. \textbf{The main text of the paper should be 6 to 8 pages, single spaced, not counting References or Appendices; any additional material should go into an Appendix.}
 
 \emph{Study design -} Likely you will not be able to control the actual study design, because the project will be based on a study already conducted or data set already collected. Nonetheless, documentation and review of the design steps is important to assess the study for correctness, impact, etc. Your particular analysis also has elements of a study design and those should be clearly described.
 
-\emph{Implementation -} The steps of the implementation should be documented. Here are some questions you may want to consider. What was the form of the raw data? What data cleaning did you conduct? How did you conduct it? Was there missing data and if so how did you approach those features? Did you conduct cross-validation? Which models did you select for the study (e.g. random forests)? How did you select the parameters of your model? Did you hold out a final test set? What was your a priori hypothesis? How did you plan to test it? What are your outcomes of interest? Why are those medically appropriate outcomes to evaluate? This list is incomplete, but remember to include details pertinent to the scientific question and your approach to answering the question. Those details should be for sufficient for your secondary to match your code to your write-up. If there are many such details, consider moving them to an Appendix.
+\emph{Implementation -} The steps of the implementation should be documented. Here are some questions you may want to consider. What was the form of the raw data? What data cleaning did you conduct? How did you conduct it? Was there missing data and if so how did you approach those features? Did you conduct cross-validation? Which models did you select for the study (e.g. random forests)? How did you select the parameters of your model? Did you hold out a final test set? What was your a priori hypothesis? How did you plan to test it? What are your outcomes of interest? Why are those appropriate outcomes to evaluate? This list is incomplete, but remember to include details pertinent to the scientific question and your approach to answering the question. Those details should be for sufficient to match your code to your write-up. If there are many such details, consider moving them to an Appendix.
 
 \emph{Results -} Your report of results should include baseline characteristics, primary and secondary endpoints and visuals to illustrate the outcomes fo your studies. See Section \ref{results} for details.
 
-Please use this template for your write-up; you will find helpful information about the content of each of those sections. Feel free to change/re-order the sections below as you see fit. Please turn in your TeX file and your PDF.
-
-\textbf{Review -} In the last week of class, you (as the secondary) will work with the primary to understand their project, code, and findings. Then you will write up a summary of the primary work and provide constructive feedback. This feedback will be reviewed by myself and shared with the primary. Constructive feedback highlights the strengths and weaknesses of the work as it stands. For weaknesses, your job is to characterize the limitation or concern and provide ways to remedy or mitigate it. It will be assessed in terms of presentation, substantiveness, and on your ability to express scientific assessment. For individual projects, this will be a self-assessment exercise and worth 5 points, with the main paper being 35 points. Please turn in your write-up as a TeX file. I will provide more details as we approach the week of review.
+Please use this template for your write-up; you will find helpful information about the content of each of those sections. Feel free to change/re-order the sections below as you see fit. Please turn in both your TeX file and your PDF.
 
 
 \section{Introduction}
 In your own words, tell your audicence about the problem. For example:
 
-``Recent advances in \{subtype of machine learning\} \citep{cite1} have resulted in substantial progress in \{health care domain\}. However, \{describe limitation\} \dots.
-In particular, \citet{cite2} describes a novel technique with the potential to improve care.
+``Recent advances in \{subtype of machine learning\} \citep{cite1} have resulted in substantial progress in \{application domain\}. However, \{describe limitation\} \dots.
+In particular, \citet{cite2} describes a novel technique with the potential to improve \{outcome\}.
 In this work, we \dots''
 
 Keep in mind who your intended audiences are, e.g., computer scientists, clinicians, statisticians.
@@ -80,14 +78,14 @@ Be sure to motivate and describe this paper's contribution to the literature.
 In order to do this, you must summarize existing approaches and/or fields (almost certainly multiple ones),
 and describe in what ways your approach should be an improvement. 
 
-Let me re-emphasize: the introduction discusses how your work builds upon and relates to the literature. While you had to be brief in your abstract, the introduction is the place to describe why this paper contributes substantively to the field. Convince me.
+Let me re-emphasize: the introduction discusses how your work builds upon and relates to the literature. While you had to be brief in your abstract, the introduction is the place to describe why this paper contributes substantively to the field. Convince us.
 
 At the end of the Introduction, provide the layout of your paper, e.g., ``In Section 2, we provide background on \{subject\}, \dots'',  et cetera.
 
 \section{Background} \label{background}
 Background is a presentation of the underlying concepts necessary to understand the details of your approach. Often times there are subsections for key math concepts. For application papers this section often provides the health context that your research addresses. Figures are helpful.
 
-\section{Your Model Name Here} \label{model}
+\section{Method: Your Model Name Here} \label{model}
 This section describes your model and references the notation you introduced in the Background Section. \textbf{Figures are definitely helpful here}, so that someone who is in your area can visualize how your approach is novel, and someone who is not in your area can visualize what you are doing.
 
 If you introduce new mathematical or statistical methods, use the terminology you defined in Section \ref{background} and define your model. Give the technical details and remember: do be precise and do be concise.
@@ -176,7 +174,7 @@ Remember to contextualize your work with respect to related work and provide ref
 Summarize your work one more time, this time assuming the reader has read your paper.
 Build suspense for what your next extension to this method would be.
 
-% ACKNOWLEDGEMENTS ONLY GO IN THE CAMERA-READY, NOT THE SUBMISSION
+% ACKNOWLEDGEMENTS
 % \acks{Many thanks to all collaborators and funders!}
 
 \bibliography{sample}
